@@ -23,7 +23,7 @@ class Service {
     this.Model = options.Model;
     this.id = options.id || '_id';
     this.paginate = options.paginate || {};
-    this.lean = options.lean || false;
+    this.lean = options.lean || true;
     this.overwrite = options.overwrite !== false;
     this.events = options.events || [];
   }
